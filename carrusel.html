@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrusel 1</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+    }
+    .carrusel{
+        width: 100%;
+        overflow: scroll;
+        padding:30px;
+        position: relative;
+    }
+    .carrusel__container{
+        white-space: nowrap;
+        margin:70px 0px;
+        padding-bottom: 10px;
+    }
+    .carrusel-item{
+        width: 200px;
+        background-color: palevioletred;
+        height: 250px;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-right: 10px;
+        display: inline-block;
+        cursor:pointer;
+        transition: 450ms all;
+        transform-origin: center left;
+        position: relative;
+
+
+    }
+    .carrusel-item:hover ~ .carrusel-item {
+        transform: translate3d(100px , 0,0);
+
+    }
+    .carrusel__container:hover .carrusel-item{
+        opacity:0.4;
+
+    }
+    .carrusel__container:hover .carrusel-item:hover{
+        transform:scale(1.5);
+        opacity: 1;
+    }
+    .carrusel-item__img{
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+    }
+    .carrusel-item__details{
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9)0%, rgba(0,0,0,0)100%);
+        font-size: 10px;
+        opacity: 0;
+        transition: 450ms opacity;
+        padding: 10px;
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+    }
+
+
+
+</style>
+<body>
+    <section class ="carrusel">
+        <div class="carrusel__container">
+            <div class="carrusel-item">
+                <img class="carrusel-item__img" src="/home/rocio/Documentos/platzivideo/imagenes/carrusel1.jpeg" alt="imagen">
+                <div class="carrusel-item__details">
+                <div>
+                    <img src="/home/rocio/Documentos/platzivideo/imagenes/play.png" alt="play">
+                    <img src="/home/rocio/Documentos/platzivideo/imagenes/plus.png" alt="plus">
+
+                </div>
+                <p class="carrusel-item__details--title">Titulo descriptivo</p>
+                <p class="carrusel-item__details--subtitle">2019 16+ 114 minutos</p>
+
+            </div>
+            </div>
+            <div class="carrusel-item">
+                    <img class="carrusel-item__img" src="/home/rocio/Documentos/platzivideo/imagenes/carrusel2.jpeg" alt="imagen">
+                    <div class="carrusel-item__details">
+                    <div>
+                        <img class="carrusel-item__details--img"src="/home/rocio/Documentos/platzivideo/imagenes/play.png" alt="play">
+                        <img class="carrusel-item__details--img"src="/home/rocio/Documentos/platzivideo/imagenes/plus.png" alt="plus">
+    
+                    </div>
+                    <p class="carrusel-item__details--title">Titulo descriptivo</p>
+                    <p class="carrusel-item__details--subtitle">2019 16+ 114 minutos</p>
+    
+                </div>
+                </div>
+            <div class="carrusel-item">
+                    <img class="carrusel-item__img" src="/home/rocio/Documentos/platzivideo/imagenes/carrusel3.jpeg" alt="imagen">
+                    <div class="carrusel-item__details">
+                    <div>
+                        <img src="/home/rocio/Documentos/platzivideo/imagenes/play.png" alt="play">
+                        <img src="/home/rocio/Documentos/platzivideo/imagenes/plus.png" alt="plus">
+    
+                    </div>
+                    <p class="carrusel-item__details--title">Titulo descriptivo</p>
+                    <p class="carrusel-item__details--subtitle">2019 16+ 114 minutos</p>
+    
+                </div>
+                </div>
+            <div class="carrusel-item">
+                    <img class="carrusel-item__img" src="/home/rocio/Documentos/platzivideo/imagenes/carrusel4.jpeg" alt="imagen">
+                    <div class="carrusel-item__details">
+                    <div>
+                        <img src="/home/rocio/Documentos/platzivideo/imagenes/play.png" alt="play">
+                        <img src="/home/rocio/Documentos/platzivideo/imagenes/plus.png" alt="plus">
+    
+                    </div>
+                    <p class="carrusel-item__details--title">Titulo descriptivo</p>
+                    <p class="carrusel-item__details--subtitle">2019 16+ 114 minutos</p>
+    
+                </div>
+                </div>
+            <div class="carrusel-item">
+                    <img class="carrusel-item__img" src="/home/rocio/Documentos/platzivideo/imagenes/carrusel5.jpeg" alt="imagen">
+                    <div class="carrusel-item__details">
+                    <div>
+                        <img src="/home/rocio/Documentos/platzivideo/imagenes/play.png" alt="play">
+                        <img src="/home/rocio/Documentos/platzivideo/imagenes/plus.png" alt="plus">
+    
+                    </div>
+                    <p class="carrusel-item__details--title">Titulo descriptivo</p>
+                    <p class="carrusel-item__details--subtitle">2019 16+ 114 minutos</p>
+    
+                </div>
+                </div>
+            <div class="carrusel-item">
+                    <img class="carrusel-item__img" src="/home/rocio/Documentos/platzivideo/imagenes/carrusel6.jpeg" alt="imagen">
+                    <div class="carrusel-item__details">
+                    <div>
+                        <img src="/home/rocio/Documentos/platzivideo/imagenes/play.png" alt="play">
+                        <img src="/home/rocio/Documentos/platzivideo/imagenes/plus.png" alt="plus">
+    
+                    </div>
+                    <p class="carrusel-item__details--title">Titulo descriptivo</p>
+                    <p class="carrusel-item__details--subtitle">2019 16+ 114 minutos</p>
+    
+                </div>
+                </div>
+            
+        </div>
+
+    </section>
+
+    
+</body>
+</html>
